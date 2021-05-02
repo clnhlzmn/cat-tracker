@@ -472,7 +472,7 @@ U 1 1 6095446A
 P 5800 4750
 F 0 "BT1" V 5555 4750 50  0000 C CNN
 F 1 "Battery" V 5646 4750 50  0000 C CNN
-F 2 "Battery:BatteryHolder_Keystone_2468_2xAAA" V 5800 4810 50  0001 C CNN
+F 2 "cat-tracker-board:battery-board" V 5800 4810 50  0001 C CNN
 F 3 "~" V 5800 4810 50  0001 C CNN
 	1    5800 4750
 	0    1    1    0   
