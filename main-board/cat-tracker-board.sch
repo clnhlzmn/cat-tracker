@@ -217,7 +217,7 @@ Wire Wire Line
 Text HLabel 14450 4950 2    50   Input ~ 0
 RFM_INT
 Wire Wire Line
-	1600 3450 1650 3450
+	1600 4650 1650 4650
 Wire Wire Line
 	1600 4150 1650 4150
 Wire Wire Line
@@ -234,7 +234,7 @@ Text HLabel 1600 4250 0    50   Input ~ 0
 MISO
 Text HLabel 1600 4150 0    50   Input ~ 0
 NSS
-Text HLabel 1600 3450 0    50   Input ~ 0
+Text HLabel 1600 4650 0    50   Input ~ 0
 RFM_RESET
 Wire Wire Line
 	4300 2800 4350 2800
@@ -260,10 +260,10 @@ Text HLabel 4350 2200 1    50   Input ~ 0
 Connection ~ 4350 2800
 Wire Wire Line
 	4350 2800 5300 2800
-Text HLabel 1600 3350 0    50   Input ~ 0
+Text HLabel 1600 4550 0    50   Input ~ 0
 RFM_INT
 Wire Wire Line
-	1600 3350 1650 3350
+	1600 4550 1650 4550
 Wire Wire Line
 	2350 6650 2350 6700
 Text HLabel 2350 6700 3    50   Input ~ 0
@@ -983,4 +983,33 @@ Text HLabel 14900 4350 0    50   Input ~ 0
 GND
 Wire Wire Line
 	14400 4250 14950 4250
+Wire Wire Line
+	11800 1250 11800 1300
+Text HLabel 11800 1250 1    50   Input ~ 0
+VUSB
+Wire Wire Line
+	11800 2300 11800 2350
+Text HLabel 11800 2350 3    50   Input ~ 0
+GND
+Wire Wire Line
+	12350 1800 12300 1800
+Text HLabel 12350 1800 2    50   Input ~ 0
+USBDP
+Wire Wire Line
+	11250 1800 11300 1800
+Text HLabel 11250 1800 0    50   Input ~ 0
+USBDM
+$Comp
+L Power_Protection:PRTR5V0U2X D4
+U 1 1 608FDA26
+P 11800 1800
+F 0 "D4" H 12344 1846 50  0000 L CNN
+F 1 "PRTR5V0U2X" H 12344 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 11860 1800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 11860 1800 50  0001 C CNN
+F 4 "Nexperia" H 11800 1800 50  0001 C CNN "mfg1"
+F 5 "PRTR5V0U2X,215" H 11800 1800 50  0001 C CNN "mfg1pn"
+	1    11800 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
