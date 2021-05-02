@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name cat-tracker-board)(type KiCad)(uri ${KIPRJMOD}/cat-tracker-board.pretty)(options "")(descr ""))
+)
