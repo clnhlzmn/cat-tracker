@@ -117,10 +117,10 @@ U 1 1 608BD287
 P 5500 2300
 F 0 "J1" H 5418 2917 50  0000 C CNN
 F 1 "Conn_01x10" H 5418 2826 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 5500 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Horizontal" H 5500 2300 50  0001 C CNN
 F 3 "~" H 5500 2300 50  0001 C CNN
 F 4 "Samtec" H 5500 2300 50  0001 C CNN "mfg1"
-F 5 "FTSH-105-01-F-D-K" H 5500 2300 50  0001 C CNN "mfg1pn"
+F 5 "FTSH-105-01-F-D-RA-K" H 5500 2300 50  0001 C CNN "mfg1pn"
 	1    5500 2300
 	1    0    0    -1  
 $EndComp
