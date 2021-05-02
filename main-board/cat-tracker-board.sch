@@ -69,7 +69,7 @@ Wire Wire Line
 Text HLabel 3050 2700 2    50   Input ~ 0
 GND
 $Comp
-L Device:Ferrite_Bead FB1
+L cat-tracker-board-rescue:Ferrite_Bead-Device FB1
 U 1 1 608B69C1
 P 2850 1800
 F 0 "FB1" V 2576 1800 50  0000 C CNN
