@@ -686,7 +686,7 @@ F 3 "~" H 9350 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_BCE Q3
+L Device:Q_NPN_BEC Q3
 U 1 1 608E668F
 P 9250 5900
 F 0 "Q3" H 9441 5900 50  0000 L CNN
@@ -699,7 +699,7 @@ F 5 "MMBT4401-7-F" H 9250 5900 50  0001 C CNN "mfg1pn"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PNP_BCE Q2
+L Device:Q_PNP_BEC Q2
 U 1 1 608E6F56
 P 9100 5650
 F 0 "Q2" H 9291 5650 50  0000 L CNN
