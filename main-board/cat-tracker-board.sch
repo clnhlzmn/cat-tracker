@@ -16,14 +16,14 @@ $EndDescr
 $Comp
 L RF_Module:RFM95W-915S2 U4
 U 1 1 608B39CE
-P 14700 4550
-F 0 "U4" H 14350 5000 50  0000 C CNN
-F 1 "RFM95W-915S2" H 15050 5000 50  0000 C CNN
-F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 11400 6200 50  0001 C CNN
-F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 11400 6200 50  0001 C CNN
-F 4 "RF Solutions" H 14700 4550 50  0001 C CNN "mfg1"
-F 5 "RFM95W-915S2" H 14700 4550 50  0001 C CNN "mfg1pn"
-	1    14700 4550
+P 13900 4550
+F 0 "U4" H 13550 5000 50  0000 C CNN
+F 1 "RFM95W-915S2" H 14250 5000 50  0000 C CNN
+F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 10600 6200 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 10600 6200 50  0001 C CNN
+F 4 "RF Solutions" H 13900 4550 50  0001 C CNN "mfg1"
+F 5 "RFM95W-915S2" H 13900 4550 50  0001 C CNN "mfg1pn"
+	1    13900 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -165,44 +165,44 @@ Wire Wire Line
 Text HLabel 4850 1600 1    50   Input ~ 0
 +3V3
 Wire Wire Line
-	14150 4750 14200 4750
+	13350 4750 13400 4750
 Wire Wire Line
-	14150 4550 14200 4550
+	13350 4550 13400 4550
 Wire Wire Line
-	14150 4450 14200 4450
+	13350 4450 13400 4450
 Wire Wire Line
-	14150 4350 14200 4350
+	13350 4350 13400 4350
 Wire Wire Line
-	14150 4250 14200 4250
+	13350 4250 13400 4250
 Wire Wire Line
-	14600 5200 14600 5150
+	13800 5200 13800 5150
 Wire Wire Line
-	14700 5200 14700 5150
+	13900 5200 13900 5150
 Wire Wire Line
-	14800 5200 14800 5150
+	14000 5200 14000 5150
 Wire Wire Line
-	14700 4000 14700 4050
-Text HLabel 14700 4000 1    50   Input ~ 0
+	13900 4000 13900 4050
+Text HLabel 13900 4000 1    50   Input ~ 0
 +3V3
-Text HLabel 14700 5200 3    50   Input ~ 0
+Text HLabel 13900 5200 3    50   Input ~ 0
 GND
-Text HLabel 14600 5200 3    50   Input ~ 0
+Text HLabel 13800 5200 3    50   Input ~ 0
 GND
-Text HLabel 14800 5200 3    50   Input ~ 0
+Text HLabel 14000 5200 3    50   Input ~ 0
 GND
-Text HLabel 14150 4250 0    50   Input ~ 0
+Text HLabel 13350 4250 0    50   Input ~ 0
 SCK
-Text HLabel 14150 4350 0    50   Input ~ 0
+Text HLabel 13350 4350 0    50   Input ~ 0
 MOSI
-Text HLabel 14150 4450 0    50   Input ~ 0
+Text HLabel 13350 4450 0    50   Input ~ 0
 MISO
-Text HLabel 14150 4550 0    50   Input ~ 0
+Text HLabel 13350 4550 0    50   Input ~ 0
 NSS
-Text HLabel 14150 4750 0    50   Input ~ 0
+Text HLabel 13350 4750 0    50   Input ~ 0
 RFM_RESET
 Wire Wire Line
-	15250 4950 15200 4950
-Text HLabel 15250 4950 2    50   Input ~ 0
+	14450 4950 14400 4950
+Text HLabel 14450 4950 2    50   Input ~ 0
 RFM_INT
 Wire Wire Line
 	1600 3450 1650 3450
@@ -924,4 +924,23 @@ Wire Wire Line
 Connection ~ 12850 7700
 Wire Wire Line
 	12850 7700 12950 7700
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 608E9ABB
+P 15150 4250
+F 0 "J?" H 15230 4242 50  0000 L CNN
+F 1 "Conn_01x02" H 15230 4151 50  0000 L CNN
+F 2 "cat-tracker-board:RF-Solutions-CON-SMA-EDGE-S" H 15150 4250 50  0001 C CNN
+F 3 "~" H 15150 4250 50  0001 C CNN
+F 4 "RF Solutions" H 15150 4250 50  0001 C CNN "mfg1"
+F 5 "CON-SMA-EDGE-S" H 15150 4250 50  0001 C CNN "mfg1pn"
+	1    15150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14950 4350 14900 4350
+Text HLabel 14900 4350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	14400 4250 14950 4250
 $EndSCHEMATC
