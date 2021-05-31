@@ -554,102 +554,6 @@ F 5 "PRTR5V0U2X,215" H 11800 1800 50  0001 C CNN "mfg1pn"
 	1    11800 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9350 6250 9350 6300
-Text HLabel 9350 6300 3    50   Input ~ 0
-GND
-$Comp
-L Device:C C9
-U 1 1 609853E4
-P 9350 6100
-F 0 "C9" V 9098 6100 50  0000 C CNN
-F 1 "10 uF" V 9189 6100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 9388 5950 50  0001 C CNN
-F 3 "~" H 9350 6100 50  0001 C CNN
-F 4 "Taiyo Yuden" H 9350 6100 50  0001 C CNN "mfg1"
-F 5 "UMK325AB7106MMHP" H 9350 6100 50  0001 C CNN "mfg1pn"
-	1    9350 6100
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	10150 6100 10150 6150
-Text HLabel 10150 6150 3    50   Input ~ 0
-GND
-Wire Wire Line
-	9700 5700 9750 5700
-Wire Wire Line
-	9400 5700 9350 5700
-Wire Wire Line
-	9350 5700 9350 5400
-Wire Wire Line
-	9350 5400 9700 5400
-Wire Wire Line
-	9350 5700 9350 5900
-Wire Wire Line
-	9350 5900 9750 5900
-Connection ~ 9350 5700
-Wire Wire Line
-	9350 5950 9350 5900
-Connection ~ 9350 5900
-Wire Wire Line
-	9700 5400 9700 5500
-Wire Wire Line
-	9700 5500 9750 5500
-$Comp
-L colinholzman:TPS61097A-33DBVR U3
-U 1 1 609EC946
-P 10150 5600
-F 0 "U3" H 10150 5967 50  0000 C CNN
-F 1 "TPS61097A-33DBVR" H 10150 5876 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 10150 4700 50  0001 C CNN
-F 3 "" H 10150 5450 50  0001 C CNN
-F 4 "Texas Instruments" H 10150 5600 50  0001 C CNN "mfg1"
-F 5 "TPS61097A-33DBVR" H 10150 5600 50  0001 C CNN "mfg1pn"
-	1    10150 5600
-	1    0    0    -1  
-$EndComp
-Connection ~ 9350 5400
-Text HLabel 10650 5500 2    50   Input ~ 0
-+3V3
-Wire Wire Line
-	10600 5850 10600 5900
-Text HLabel 10600 5900 3    50   Input ~ 0
-GND
-$Comp
-L Device:C C10
-U 1 1 60994D70
-P 10600 5700
-F 0 "C10" H 10715 5654 50  0000 L CNN
-F 1 "10 uF" H 10715 5745 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 10638 5550 50  0001 C CNN
-F 3 "~" H 10600 5700 50  0001 C CNN
-F 4 "Taiyo Yuden" H 10600 5700 50  0001 C CNN "mfg1"
-F 5 "UMK325AB7106MMHP" H 10600 5700 50  0001 C CNN "mfg1pn"
-	1    10600 5700
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	10600 5550 10600 5500
-Wire Wire Line
-	10600 5500 10650 5500
-Wire Wire Line
-	10550 5500 10600 5500
-Connection ~ 10600 5500
-$Comp
-L Device:L L1
-U 1 1 60989E09
-P 9550 5700
-F 0 "L1" V 9350 5700 50  0000 C CNN
-F 1 "10 uH" V 9450 5700 50  0000 C CNN
-F 2 "colinholzman:DO3314-...MLC" H 9550 5700 50  0001 C CNN
-F 3 "~" H 9550 5700 50  0001 C CNN
-F 4 "Coilcraft" H 9550 5700 50  0001 C CNN "mfg1"
-F 5 "DO3314-103MLC" H 9550 5700 50  0001 C CNN "mfg1pn"
-	1    9550 5700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9300 5400 9350 5400
 $Comp
 L Device:Battery BT1
 U 1 1 6095446A
@@ -669,16 +573,10 @@ Text HLabel 6800 5400 2    50   Input ~ 0
 VBAT
 Wire Wire Line
 	6800 5400 6750 5400
-Text HLabel 9300 5400 0    50   Input ~ 0
-VBAT_SW
 Text HLabel 7700 5400 0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	7700 5400 7750 5400
-Text HLabel 8200 5500 2    50   Input ~ 0
-VBAT_SW
-Wire Wire Line
-	8200 5500 8150 5500
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 60C01EB4
@@ -761,4 +659,23 @@ Text HLabel 8550 2150 2    50   Input ~ 0
 +3V3
 Wire Wire Line
 	8550 2150 8500 2150
+$Comp
+L Device:D_Schottky D1
+U 1 1 60B4E39F
+P 8500 5500
+F 0 "D1" H 8500 5283 50  0000 C CNN
+F 1 "CUS08F30" H 8500 5374 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8500 5500 50  0001 C CNN
+F 3 "~" H 8500 5500 50  0001 C CNN
+F 4 "Toshiba" H 8500 5500 50  0001 C CNN "mfg1"
+F 5 "CUS08F30" H 8500 5500 50  0001 C CNN "mfg1pn"
+	1    8500 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 5500 8350 5500
+Wire Wire Line
+	8700 5500 8650 5500
+Text HLabel 8700 5500 2    50   Input ~ 0
++3V3
 $EndSCHEMATC
