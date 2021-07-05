@@ -462,8 +462,6 @@ Text HLabel 12350 1800 2    50   Input ~ 0
 USBDP
 Wire Wire Line
 	11250 1800 11300 1800
-Text HLabel 11250 1800 0    50   Input ~ 0
-USBDM
 $Comp
 L Power_Protection:PRTR5V0U2X D4
 U 1 1 608FDA26
@@ -493,7 +491,7 @@ Wire Wire Line
 Text HLabel 4900 5100 0    50   Input ~ 0
 GND
 Text HLabel 5400 5100 2    50   Input ~ 0
-VBAT
+VCELL
 Wire Wire Line
 	5400 5100 5350 5100
 Text HLabel 8650 5400 0    50   Input ~ 0
@@ -546,19 +544,6 @@ F 5 "L80RE-M37" H 13600 7650 50  0001 C CNN "mfg1pn"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Battery_Management:MCP73831-2-OT U?
-U 1 1 60E29AE2
-P 8050 1400
-F 0 "U?" H 8050 1881 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 8050 1790 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8100 1150 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 7900 1350 50  0001 C CNN
-F 4 "Microchip" H 8050 1400 50  0001 C CNN "mfg1"
-F 5 "MCP73831T-2ATI/OT" H 8050 1400 50  0001 C CNN "mfg1pn"
-	1    8050 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Battery_Management:BQ297xy U?
 U 1 1 60E2FD2E
 P 6400 5200
@@ -594,4 +579,158 @@ F 3 "http://www.ti.com/lit/ds/symlink/csd16301q2.pdf" V 7200 5500 50  0001 L CNN
 	1    7200 5500
 	1    0    0    -1  
 $EndComp
+$Comp
+L colinholzman:MCP7383*-*-MC U?
+U 1 1 60E3AA2D
+P 8550 1550
+F 0 "U?" H 8550 1965 50  0000 C CNN
+F 1 "MCP73831-2ACI/MC" H 8550 1874 50  0000 C CNN
+F 2 "" H 8450 1450 50  0001 C CNN
+F 3 "" H 8450 1450 50  0001 C CNN
+F 4 "Microchip" H 8550 1550 50  0001 C CNN "mfg1"
+F 5 "MCP73831-2ACI/MC" H 8550 1550 50  0001 C CNN "mfg1pn"
+	1    8550 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1600 8200 1600
+Wire Wire Line
+	8150 1700 8200 1700
+Wire Wire Line
+	8150 1400 8200 1400
+Wire Wire Line
+	8150 1500 8200 1500
+Text HLabel 11250 1800 0    50   Input ~ 0
+USBDM
+Wire Wire Line
+	8900 1600 8950 1600
+Text HLabel 8950 1600 2    50   Input ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 60E4853F
+P 6800 1600
+F 0 "C?" H 6915 1646 50  0000 L CNN
+F 1 "4.7 uF" H 6915 1555 50  0000 L CNN
+F 2 "" H 6838 1450 50  0001 C CNN
+F 3 "~" H 6800 1600 50  0001 C CNN
+	1    6800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1350 6800 1400
+Text HLabel 6800 1350 1    50   Input ~ 0
+VUSB
+Wire Wire Line
+	6800 1750 6800 1800
+Text HLabel 6800 1800 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 60E4E50A
+P 8050 1900
+F 0 "C?" H 8165 1946 50  0000 L CNN
+F 1 "4.7 uF" H 8165 1855 50  0000 L CNN
+F 2 "" H 8088 1750 50  0001 C CNN
+F 3 "~" H 8050 1900 50  0001 C CNN
+	1    8050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2050 8050 2100
+Text HLabel 8050 2100 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R?
+U 1 1 60E535B5
+P 9500 1650
+F 0 "R?" H 9570 1696 50  0000 L CNN
+F 1 "14.7K" H 9570 1605 50  0000 L CNN
+F 2 "" V 9430 1650 50  0001 C CNN
+F 3 "~" H 9500 1650 50  0001 C CNN
+	1    9500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1800 9500 1850
+Text HLabel 9500 1850 3    50   Input ~ 0
+GND
+Wire Wire Line
+	9500 1500 9500 1400
+Wire Wire Line
+	9500 1400 8900 1400
+Wire Wire Line
+	8150 1500 8150 1400
+Connection ~ 6800 1400
+Wire Wire Line
+	6800 1400 6800 1450
+Wire Wire Line
+	8150 1600 8150 1700
+Wire Wire Line
+	8050 1700 8150 1700
+Connection ~ 8050 1700
+Wire Wire Line
+	8050 1700 8050 1750
+Connection ~ 8150 1700
+Wire Wire Line
+	8000 1700 8050 1700
+Text HLabel 8000 1700 0    50   Input ~ 0
+VBAT
+$Comp
+L Diode:1.5KExxA D?
+U 1 1 60E8FB15
+P 7250 1600
+F 0 "D?" V 7204 1680 50  0000 L CNN
+F 1 "SMAJ5.0A" V 7295 1680 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 7250 1400 50  0001 C CNN
+F 3 "" H 7200 1600 50  0001 C CNN
+F 4 "Vishay" H 7250 1600 50  0001 C CNN "mfg1"
+F 5 "SMAJ5.0A-E3/61" H 7250 1600 50  0001 C CNN "mfg1pn"
+	1    7250 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 1750 7250 1800
+Text HLabel 7250 1800 3    50   Input ~ 0
+GND
+Wire Wire Line
+	7250 1450 7250 1400
+Connection ~ 7250 1400
+Wire Wire Line
+	7250 1400 6800 1400
+Wire Wire Line
+	7250 1400 8150 1400
+Connection ~ 8150 1400
+$Comp
+L Device:R R?
+U 1 1 60EA1E99
+P 8950 2300
+F 0 "R?" H 9020 2346 50  0000 L CNN
+F 1 "750" H 9020 2255 50  0000 L CNN
+F 2 "" V 8880 2300 50  0001 C CNN
+F 3 "~" H 8950 2300 50  0001 C CNN
+	1    8950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60EA4C3A
+P 8950 1950
+F 0 "D?" V 8897 2030 50  0000 L CNN
+F 1 "LED" V 8988 2030 50  0000 L CNN
+F 2 "" H 8950 1950 50  0001 C CNN
+F 3 "~" H 8950 1950 50  0001 C CNN
+	1    8950 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 1800 8950 1700
+Wire Wire Line
+	8950 1700 8900 1700
+Wire Wire Line
+	8950 2150 8950 2100
+Wire Wire Line
+	8950 2500 8950 2450
+Text HLabel 8950 2500 3    50   Input ~ 0
+VUSB
 $EndSCHEMATC
