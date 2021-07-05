@@ -478,57 +478,34 @@ $EndComp
 $Comp
 L Device:Battery BT1
 U 1 1 6095446A
-P 5150 5100
-F 0 "BT1" V 4905 5100 50  0000 C CNN
-F 1 "Lir2477" V 4996 5100 50  0000 C CNN
-F 2 "colinholzman:Keystone_3039" V 5150 5160 50  0001 C CNN
-F 3 "~" V 5150 5160 50  0001 C CNN
-	1    5150 5100
-	0    1    1    0   
+P 7650 5350
+F 0 "BT1" H 7758 5396 50  0000 L CNN
+F 1 "Lir2477" H 7758 5305 50  0000 L CNN
+F 2 "colinholzman:Keystone_3039" V 7650 5410 50  0001 C CNN
+F 3 "~" V 7650 5410 50  0001 C CNN
+	1    7650 5350
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5100 4900 5100
-Text HLabel 4900 5100 0    50   Input ~ 0
-GND
-Text HLabel 5400 5100 2    50   Input ~ 0
-VCELL
-Wire Wire Line
-	5400 5100 5350 5100
-Text HLabel 8650 5400 0    50   Input ~ 0
+Text HLabel 7650 4600 1    50   Input ~ 0
+VBAT
+Text HLabel 9500 5550 0    50   Input ~ 0
 VBAT
 Wire Wire Line
-	8650 5400 8700 5400
+	9500 5550 9550 5550
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 60C01EB4
-P 8900 5400
-F 0 "SW1" H 8900 5685 50  0000 C CNN
-F 1 "PCM12SMTR" H 8900 5594 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 8900 5400 50  0001 C CNN
-F 3 "~" H 8900 5400 50  0001 C CNN
-F 4 "C&K" H 8900 5400 50  0001 C CNN "mfg1"
-F 5 "PCM12SMTR" H 8900 5400 50  0001 C CNN "mfg1pn"
-	1    8900 5400
+P 9750 5550
+F 0 "SW1" H 9750 5835 50  0000 C CNN
+F 1 "PCM12SMTR" H 9750 5744 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 9750 5550 50  0001 C CNN
+F 3 "~" H 9750 5550 50  0001 C CNN
+F 4 "C&K" H 9750 5550 50  0001 C CNN "mfg1"
+F 5 "PCM12SMTR" H 9750 5550 50  0001 C CNN "mfg1pn"
+	1    9750 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Schottky D1
-U 1 1 60B4E39F
-P 9450 5500
-F 0 "D1" H 9450 5283 50  0000 C CNN
-F 1 "CUS08F30" H 9450 5374 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9450 5500 50  0001 C CNN
-F 3 "~" H 9450 5500 50  0001 C CNN
-F 4 "Toshiba" H 9450 5500 50  0001 C CNN "mfg1"
-F 5 "CUS08F30" H 9450 5500 50  0001 C CNN "mfg1pn"
-	1    9450 5500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9100 5500 9300 5500
-Wire Wire Line
-	9650 5500 9600 5500
-Text HLabel 9650 5500 2    50   Input ~ 0
+Text HLabel 10000 5650 2    50   Input ~ 0
 +3V3
 $Comp
 L RF_GPS:L80-R U3
@@ -548,36 +525,36 @@ L Battery_Management:BQ297xy U?
 U 1 1 60E2FD2E
 P 6400 5200
 F 0 "U?" H 6400 5567 50  0000 C CNN
-F 1 "BQ297xy" H 6400 5476 50  0000 C CNN
+F 1 "BQ29737DSER" H 6400 5476 50  0000 C CNN
 F 2 "Package_SON:WSON-6_1.5x1.5mm_P0.5mm" H 6400 5550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/bq2970.pdf" H 6150 5400 50  0001 C CNN
 F 4 "TI" H 6400 5200 50  0001 C CNN "mfg1"
 F 5 "BQ29737DSER" H 6400 5200 50  0001 C CNN "mfg1pn"
 F 6 "BQ29737DSET" H 6400 5200 50  0001 C CNN "mfg2pn"
 	1    6400 5200
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:CSD16301Q2 Q?
 U 1 1 60E3DE41
-P 7200 4850
-F 0 "Q?" H 7404 4896 50  0000 L CNN
-F 1 "CSD16301Q2" H 7404 4805 50  0000 L CNN
-F 2 "Package_SON:Texas_DQK" H 7400 4775 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/csd16301q2.pdf" V 7200 4850 50  0001 L CNN
-	1    7200 4850
-	1    0    0    -1  
+P 5950 5850
+F 0 "Q?" V 6199 5850 50  0000 C CNN
+F 1 "CSD16301Q2" V 6290 5850 50  0000 C CNN
+F 2 "Package_SON:Texas_DQK" H 6150 5775 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/csd16301q2.pdf" V 5950 5850 50  0001 L CNN
+	1    5950 5850
+	0    -1   1    0   
 $EndComp
 $Comp
 L Transistor_FET:CSD16301Q2 Q?
 U 1 1 60E42C5F
-P 7200 5500
-F 0 "Q?" H 7404 5546 50  0000 L CNN
-F 1 "CSD16301Q2" H 7404 5455 50  0000 L CNN
-F 2 "Package_SON:Texas_DQK" H 7400 5425 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/csd16301q2.pdf" V 7200 5500 50  0001 L CNN
-	1    7200 5500
-	1    0    0    -1  
+P 5400 5850
+F 0 "Q?" V 5649 5850 50  0000 C CNN
+F 1 "CSD16301Q2" V 5740 5850 50  0000 C CNN
+F 2 "Package_SON:Texas_DQK" H 5600 5775 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/csd16301q2.pdf" V 5400 5850 50  0001 L CNN
+	1    5400 5850
+	0    1    1    0   
 $EndComp
 $Comp
 L colinholzman:MCP7383*-*-MC U?
@@ -733,4 +710,91 @@ Wire Wire Line
 	8950 2500 8950 2450
 Text HLabel 8950 2500 3    50   Input ~ 0
 VUSB
+Wire Wire Line
+	5400 5650 5400 5100
+Wire Wire Line
+	5950 5650 5950 5300
+Wire Wire Line
+	5950 5300 6000 5300
+Wire Wire Line
+	5200 5950 5150 5950
+Text HLabel 5150 5950 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6400 5500 6400 5950
+Wire Wire Line
+	6150 5950 6400 5950
+Wire Wire Line
+	6400 5950 7150 5950
+Wire Wire Line
+	7650 5550 7650 5950
+Connection ~ 6400 5950
+$Comp
+L Device:R R?
+U 1 1 60EE2DDD
+P 6850 5500
+F 0 "R?" H 6920 5546 50  0000 L CNN
+F 1 "2.2K" H 6920 5455 50  0000 L CNN
+F 2 "" V 6780 5500 50  0001 C CNN
+F 3 "~" H 6850 5500 50  0001 C CNN
+	1    6850 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5350 6850 5300
+Wire Wire Line
+	6850 5300 6800 5300
+Wire Wire Line
+	6850 5700 6850 5650
+Text HLabel 6850 5700 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R?
+U 1 1 60EEC27F
+P 7150 4900
+F 0 "R?" H 7220 4946 50  0000 L CNN
+F 1 "330" H 7220 4855 50  0000 L CNN
+F 2 "" V 7080 4900 50  0001 C CNN
+F 3 "~" H 7150 4900 50  0001 C CNN
+	1    7150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4750 7150 4700
+Wire Wire Line
+	7650 4700 7650 4600
+Wire Wire Line
+	7650 4700 7650 5150
+Connection ~ 7650 4700
+Wire Wire Line
+	6800 5100 7150 5100
+Wire Wire Line
+	7150 5100 7150 5050
+$Comp
+L Device:C C?
+U 1 1 60F00417
+P 7150 5350
+F 0 "C?" H 7265 5396 50  0000 L CNN
+F 1 "0.1 uF" H 7265 5305 50  0000 L CNN
+F 2 "" H 7188 5200 50  0001 C CNN
+F 3 "~" H 7150 5350 50  0001 C CNN
+	1    7150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5200 7150 5100
+Connection ~ 7150 5100
+Wire Wire Line
+	7150 5500 7150 5950
+Wire Wire Line
+	7150 4700 7650 4700
+Wire Wire Line
+	7150 5950 7650 5950
+Connection ~ 7150 5950
+Wire Wire Line
+	5600 5950 5750 5950
+Wire Wire Line
+	5400 5100 6000 5100
+Wire Wire Line
+	9950 5650 10000 5650
 $EndSCHEMATC
