@@ -273,7 +273,7 @@ Wire Wire Line
 Text HLabel 1600 6450 0    50   Input ~ 0
 nRESET
 $Comp
-L MCU_Microchip_SAMD:ATSAMD21E18A-A U1
+L cat-tracker-board-rescue:ATSAMD21E18A-A-MCU_Microchip_SAMD U1
 U 1 1 608CAFAA
 P 2350 4750
 F 0 "U1" H 2980 4796 50  0000 L CNN
@@ -508,7 +508,7 @@ $EndComp
 Text HLabel 10000 5650 2    50   Input ~ 0
 +3V3
 $Comp
-L RF_GPS:L80-R U3
+L cat-tracker-board-rescue:L80-R-RF_GPS U3
 U 1 1 60E2275D
 P 13600 7650
 F 0 "U3" H 13600 7061 50  0000 C CNN
