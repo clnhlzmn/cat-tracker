@@ -338,85 +338,26 @@ Wire Wire Line
 Connection ~ 2850 3800
 Wire Wire Line
 	2850 3800 2850 4250
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
-U 1 1 60913954
-P 6750 1900
-F 0 "J2" H 6320 1839 50  0000 R CNN
-F 1 "USB C" H 6320 1748 50  0000 R CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 6900 1900 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 6900 1900 50  0001 C CNN
-F 4 "Amphenol" H 6750 1900 50  0001 C CNN "mfg1"
-F 5 "12401610E4#2A" H 6750 1900 50  0001 C CNN "mfg1pn"
-	1    6750 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6750 2850 6750 2800
+	6800 2400 6800 2350
 Wire Wire Line
-	6450 2850 6450 2800
-Text HLabel 6450 2850 3    50   Input ~ 0
+	6700 2400 6700 2350
+Text HLabel 6700 2400 3    50   Input ~ 0
 GND
-Text HLabel 6750 2850 3    50   Input ~ 0
+Text HLabel 6800 2400 3    50   Input ~ 0
 GND
 Wire Wire Line
-	7400 1800 7350 1800
+	7150 2050 7100 2050
 Wire Wire Line
-	7400 2000 7350 2000
-Text HLabel 7400 1800 2    50   Input ~ 0
+	7150 1950 7100 1950
+Text HLabel 7150 2050 2    50   Input ~ 0
 USBDM
-Text HLabel 7400 2000 2    50   Input ~ 0
+Text HLabel 7150 1950 2    50   Input ~ 0
 USBDP
 Wire Wire Line
-	7400 2100 7350 2100
-Text HLabel 7400 2100 2    50   Input ~ 0
-USBDP
-Wire Wire Line
-	7400 1900 7350 1900
-Text HLabel 7400 1900 2    50   Input ~ 0
-USBDM
-$Comp
-L Device:R R9
-U 1 1 6091DC73
-P 7750 1500
-F 0 "R9" V 7543 1500 50  0000 C CNN
-F 1 "5.1k" V 7634 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7680 1500 50  0001 C CNN
-F 3 "~" H 7750 1500 50  0001 C CNN
-F 4 "Yageo" H 7750 1500 50  0001 C CNN "mfg1"
-F 5 "RC0805JR-075K1L" H 7750 1500 50  0001 C CNN "mfg1pn"
-	1    7750 1500
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7900 1500 7950 1500
-Text HLabel 7950 1500 2    50   Input ~ 0
-GND
-$Comp
-L Device:R R10
-U 1 1 60920F65
-P 7750 1600
-F 0 "R10" V 7543 1600 50  0001 C CNN
-F 1 "5.1k" V 7634 1600 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7680 1600 50  0001 C CNN
-F 3 "~" H 7750 1600 50  0001 C CNN
-F 4 "Yageo" H 7750 1600 50  0001 C CNN "mfg1"
-F 5 "RC0805JR-075K1L" H 7750 1600 50  0001 C CNN "mfg1pn"
-	1    7750 1600
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7900 1600 7950 1600
-Text HLabel 7950 1600 2    50   Input ~ 0
-GND
-Wire Wire Line
-	7400 1300 7350 1300
-Text HLabel 7400 1300 2    50   Input ~ 0
+	7150 1750 7100 1750
+Text HLabel 7150 1750 2    50   Input ~ 0
 VUSB
-Wire Wire Line
-	7600 1500 7350 1500
-Wire Wire Line
-	7600 1600 7350 1600
 Wire Wire Line
 	1800 6300 1850 6300
 Text HLabel 1800 6300 0    50   Input ~ 0
@@ -925,4 +866,15 @@ Text Notes 12200 4400 0    50   ~ 0
 GPS
 Text Notes 12150 1450 0    50   ~ 0
 LoRa
+$Comp
+L Connector:USB_B_Micro J3
+U 1 1 60E667A5
+P 6800 1950
+F 0 "J3" H 6857 2417 50  0000 C CNN
+F 1 "USB_B_Micro" H 6857 2326 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 6950 1900 50  0001 C CNN
+F 3 "~" H 6950 1900 50  0001 C CNN
+	1    6800 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
