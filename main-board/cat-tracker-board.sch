@@ -362,7 +362,7 @@ Wire Wire Line
 Text HLabel 1800 6400 0    50   Input ~ 0
 GPS_EN
 Wire Wire Line
-	13700 2000 14250 2000
+	13700 2000 14100 2000
 Wire Wire Line
 	8100 2300 8100 2350
 Text HLabel 8100 2300 1    50   Input ~ 0
@@ -427,14 +427,14 @@ VDD
 $Comp
 L cat-tracker-board-rescue:L80-R-RF_GPS U3
 U 1 1 60E2275D
-P 13350 5050
-F 0 "U3" H 13350 4461 50  0000 C CNN
-F 1 "L80-R" H 13350 4370 50  0000 C CNN
-F 2 "RF_GPS:Quectel_L80-R" H 13350 4150 50  0001 C CNN
-F 3 "https://www.quectel.com/UploadImage/Downlad/Quectel_L80-R_Hardware_Design_V1.2.pdf" H 13350 5050 50  0001 C CNN
-F 4 "Quectel" H 13350 5050 50  0001 C CNN "mfg1"
-F 5 "L80RE-M37" H 13350 5050 50  0001 C CNN "mfg1pn"
-	1    13350 5050
+P 13750 5350
+F 0 "U3" H 13400 5800 50  0000 C CNN
+F 1 "L80-R" H 13400 4900 50  0000 C CNN
+F 2 "RF_GPS:Quectel_L80-R" H 13750 4450 50  0001 C CNN
+F 3 "https://www.quectel.com/UploadImage/Downlad/Quectel_L80-R_Hardware_Design_V1.2.pdf" H 13750 5350 50  0001 C CNN
+F 4 "Quectel" H 13750 5350 50  0001 C CNN "mfg1"
+F 5 "L80RE-M37" H 13750 5350 50  0001 C CNN "mfg1pn"
+	1    13750 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -727,14 +727,14 @@ Wire Notes Line
 Wire Notes Line
 	12000 3300 12000 1350
 Wire Notes Line
-	15150 4300 15150 6200
+	15150 3900 15150 6200
 Wire Notes Line
 	15150 6200 12000 6200
 Wire Notes Line
-	12000 6200 12000 4300
+	12000 6200 12000 3900
 Wire Notes Line
-	12000 4300 15150 4300
-Text Notes 12200 4400 0    50   ~ 0
+	12000 3900 15150 3900
+Text Notes 12100 4000 0    50   ~ 0
 GPS
 Text Notes 12150 1450 0    50   ~ 0
 LoRa
@@ -744,10 +744,10 @@ U 1 1 60E667A5
 P 6800 1950
 F 0 "J3" H 6857 2417 50  0000 C CNN
 F 1 "USB_B_Micro" H 6857 2326 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 6950 1900 50  0001 C CNN
+F 2 "colinholzman:USB_Micro-B_Amphenol_10118192_Horizontal" H 6950 1900 50  0001 C CNN
 F 3 "~" H 6950 1900 50  0001 C CNN
 F 4 "Amphenol" H 6800 1950 50  0001 C CNN "mfg1"
-F 5 "10103594-0001LF" H 6800 1950 50  0001 C CNN "mfg1pn"
+F 5 "10118192-0001LF" H 6800 1950 50  0001 C CNN "mfg1pn"
 	1    6800 1950
 	1    0    0    -1  
 $EndComp
@@ -772,12 +772,105 @@ F 5 "ATSAMD21E***-M**" H 2550 6300 50  0001 C CNN "mfg1pn"
 	1    2550 6300
 	1    0    0    -1  
 $EndComp
+$Comp
+L colinholzman:Si3443 Q1
+U 1 1 60E6BE86
+P 13750 4600
+F 0 "Q1" H 13955 4554 50  0000 L CNN
+F 1 "SI3443DDV-T1-GE3" H 13955 4645 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 13950 4700 50  0001 C CNN
+F 3 "~" H 13750 4600 50  0001 C CNN
+F 4 "Vishay Semiconductors" H 13750 4600 50  0001 C CNN "mfg1"
+F 5 "SI3443DDV-T1-GE3" H 13750 4600 50  0001 C CNN "mfg1pn"
+	1    13750 4600
+	1    0    0    1   
+$EndComp
 Wire Wire Line
-	12800 4850 12850 4850
+	13850 4850 13850 4800
 Wire Wire Line
-	12800 4950 12850 4950
-Text HLabel 12800 4850 0    50   Input ~ 0
-RX
-Text HLabel 12800 4950 0    50   Input ~ 0
-TX
+	13850 4350 13850 4400
+Text HLabel 13850 4350 1    50   Input ~ 0
+VDD
+$Comp
+L Device:R R3
+U 1 1 60EADECE
+P 13500 4400
+F 0 "R3" H 13570 4446 50  0000 L CNN
+F 1 "100k" H 13570 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13430 4400 50  0001 C CNN
+F 3 "~" H 13500 4400 50  0001 C CNN
+F 4 "Panasonic" H 13500 4400 50  0001 C CNN "mfg1"
+F 5 "ERJ-3EKF1003V" H 13500 4400 50  0001 C CNN "mfg1pn"
+F 6 "Resistor, 100 kOhm, 0603" H 13500 4400 50  0001 C CNN "description"
+	1    13500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 4600 13500 4550
+Wire Wire Line
+	13550 4600 13500 4600
+Wire Wire Line
+	13500 4200 13500 4250
+Text HLabel 13500 4200 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	13450 4600 13500 4600
+Connection ~ 13500 4600
+Text HLabel 13450 4600 0    50   Input ~ 0
+GPS_EN
+Wire Wire Line
+	13600 4800 13650 4800
+Text HLabel 13600 4800 0    50   Input ~ 0
+VDD
+Wire Wire Line
+	13650 4800 13650 4850
+Wire Wire Line
+	13750 5900 13750 5850
+Text HLabel 13750 5900 3    50   Input ~ 0
+GND
+Wire Wire Line
+	13200 5550 13250 5550
+Text HLabel 13200 5550 0    50   Input ~ 0
+GPS_nRESET
+Wire Wire Line
+	13200 5450 13250 5450
+Text HLabel 13200 5450 0    50   Input ~ 0
+GPS_1PPS
+Wire Wire Line
+	1800 6600 1850 6600
+Text HLabel 1800 6600 0    50   Input ~ 0
+GPS_nRESET
+Wire Wire Line
+	1800 6900 1850 6900
+Text HLabel 1800 6900 0    50   Input ~ 0
+GPS_1PPS
+Wire Wire Line
+	13200 5250 13250 5250
+Text HLabel 13200 5250 0    50   Input ~ 0
+GPS_TX
+Wire Wire Line
+	13200 5150 13250 5150
+Text HLabel 13200 5150 0    50   Input ~ 0
+GPS_RX
+Wire Wire Line
+	1800 6500 1850 6500
+Text HLabel 1800 6500 0    50   Input ~ 0
+GPS_RX
+Text Notes 800  6340 0    50   ~ 0
+SERCOM1 PAD0
+Text Notes 800  6540 0    50   ~ 0
+SERCOM1 PAD2
+Text Notes 1000 5700 0    50   ~ 0
+SERCOM0
+$Comp
+L Device:Antenna AE1
+U 1 1 60F07981
+P 14300 2000
+F 0 "AE1" V 14254 2130 50  0000 L CNN
+F 1 "Antenna" V 14345 2130 50  0000 L CNN
+F 2 "RF_Antenna:Texas_SWRA416_868MHz_915MHz" H 14300 2000 50  0001 C CNN
+F 3 "~" H 14300 2000 50  0001 C CNN
+	1    14300 2000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
