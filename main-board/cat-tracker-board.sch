@@ -276,14 +276,6 @@ Wire Wire Line
 	1850 8000 1800 8000
 Text HLabel 1800 8000 0    50   Input ~ 0
 nRESET
-Wire Wire Line
-	1800 7100 1850 7100
-Wire Wire Line
-	1800 7200 1850 7200
-Text HLabel 1800 7100 0    50   Input ~ 0
-USBDM
-Text HLabel 1800 7200 0    50   Input ~ 0
-USBDP
 $Comp
 L Device:C C2
 U 1 1 608FFFA6
@@ -346,9 +338,9 @@ Wire Wire Line
 Wire Wire Line
 	7150 1950 7100 1950
 Text HLabel 7150 2050 2    50   Input ~ 0
-USBDM
+USBD-
 Text HLabel 7150 1950 2    50   Input ~ 0
-USBDP
+USBD+
 Wire Wire Line
 	7150 1750 7100 1750
 Text HLabel 7150 1750 2    50   Input ~ 0
@@ -371,12 +363,6 @@ Wire Wire Line
 	8100 3350 8100 3400
 Text HLabel 8100 3400 3    50   Input ~ 0
 GND
-Wire Wire Line
-	8650 2850 8600 2850
-Text HLabel 8650 2850 2    50   Input ~ 0
-USBDP
-Wire Wire Line
-	7550 2850 7600 2850
 $Comp
 L Power_Protection:PRTR5V0U2X D4
 U 1 1 608FDA26
@@ -458,8 +444,6 @@ Wire Wire Line
 	7450 4850 7500 4850
 Wire Wire Line
 	7450 4950 7500 4950
-Text HLabel 7550 2850 0    50   Input ~ 0
-USBDM
 Wire Wire Line
 	8200 5050 8250 5050
 Text HLabel 8250 5050 2    50   Input ~ 0
@@ -873,4 +857,20 @@ F 3 "~" H 14300 2000 50  0001 C CNN
 	1    14300 2000
 	0    1    1    0   
 $EndComp
+Text HLabel 7550 2850 0    50   Input ~ 0
+USBD-
+Text HLabel 8650 2850 2    50   Input ~ 0
+USBD+
+Wire Wire Line
+	7550 2850 7600 2850
+Wire Wire Line
+	8600 2850 8650 2850
+Wire Wire Line
+	1800 7100 1850 7100
+Wire Wire Line
+	1800 7200 1850 7200
+Text HLabel 1800 7100 0    50   Input ~ 0
+USBD-
+Text HLabel 1800 7200 0    50   Input ~ 0
+USBD+
 $EndSCHEMATC
