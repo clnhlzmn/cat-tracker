@@ -130,8 +130,6 @@
     (via_drill 0.4)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
-    (diff_pair_width 0.1778)
-    (diff_pair_gap 0.1778)
     (add_net /GND)
     (add_net /GPS_1PPS)
     (add_net /GPS_EN)
