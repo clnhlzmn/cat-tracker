@@ -129,7 +129,7 @@ $EndComp
 Wire Wire Line
 	2250 1450 2200 1450
 Text HLabel 2250 1450 2    50   Input ~ 0
-+3V3
+VDD
 Text HLabel 2250 1550 2    50   Input ~ 0
 SWDIO
 Text HLabel 2250 1650 2    50   Input ~ 0
