@@ -873,4 +873,8 @@ Text HLabel 1800 7200 0    50   Input ~ 0
 USBD+
 Wire Wire Line
 	10600 8050 10800 8050
+Wire Wire Line
+	3150 8000 3200 8000
+Text HLabel 3200 8000 2    50   Input ~ 0
+GND
 $EndSCHEMATC
