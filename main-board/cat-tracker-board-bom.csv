@@ -18,7 +18,7 @@
 "1","R6","Resistor, 14 kOhm, 0603","Yageo","RC0603FR-0714KL","",""
 "1","SW1","","C&K","PCM12SMTR","",""
 "1","U1","","Microchip","ATSAMD21E***-M**","",""
-"1","U3","","Quectel","L80RE-M37","",""
+"1","U3","","Quectel","L80RE-M37","Quectel","L80-M39"
 "1","U4","","RF Solutions","RFM95W-915S2","",""
 "1","U5","","Microchip","MCP73831-2ACI/MC","",""
 "1","U6","","Microchip","MCP1700T-3602E/TT","",""
