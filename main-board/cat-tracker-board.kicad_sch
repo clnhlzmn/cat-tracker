@@ -1477,20 +1477,20 @@
         )
       )
     )
-    (symbol "colinholzman:MCP73837/8-MF" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (symbol "colinholzman:MCP73837_8-MF" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U?" (id 0) (at 0 11.43 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "MCP73837/8-MF" (id 1) (at 0 8.89 0)
+      (property "Value" "MCP73837_8-MF" (id 1) (at 0 8.89 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.7x1.4mm" (id 2) (at 0 -11.43 0)
+      (property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm" (id 2) (at 0 -11.43 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (id 3) (at -5.08 -2.54 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "_0_0"
+      (symbol "MCP73837_8-MF_0_0"
         (pin input line (at 11.43 3.81 180) (length 2.54)
           (name "VBAT" (effects (font (size 1.27 1.27))))
           (number "10" (effects (font (size 1.27 1.27))))
@@ -1504,13 +1504,13 @@
           (number "9" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "_0_1"
+      (symbol "MCP73837_8-MF_0_1"
         (rectangle (start -8.89 6.35) (end 8.89 -8.89)
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type background))
         )
       )
-      (symbol "_1_1"
+      (symbol "MCP73837_8-MF_1_1"
         (pin input line (at -11.43 3.81 0) (length 2.54)
           (name "VAC" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -3632,11 +3632,11 @@
     (pin "2" (uuid 40d949b9-e0e4-4df7-8565-5117f67c5ae6))
   )
 
-  (symbol (lib_id "colinholzman:MCP73837/8-MF") (at 191.77 132.08 0) (unit 1)
+  (symbol (lib_id "colinholzman:MCP73837_8-MF") (at 191.77 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a1fe7c02-942c-4c08-97d9-5ea85d13c90d)
     (property "Reference" "U5" (id 0) (at 191.77 120.65 0))
-    (property "Value" "MCP73837/8-MF" (id 1) (at 191.77 123.19 0))
+    (property "Value" "MCP73837_8-MF" (id 1) (at 191.77 123.19 0))
     (property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm" (id 2) (at 191.77 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3792,7 +3792,7 @@
       (reference "U4") (unit 1) (value "RFM95W-915S2") (footprint "RF_Module:HOPERF_RFM9XW_SMD")
     )
     (path "/a1fe7c02-942c-4c08-97d9-5ea85d13c90d"
-      (reference "U5") (unit 1) (value "MCP73837/8-MF") (footprint "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm")
+      (reference "U5") (unit 1) (value "MCP73837_8-MF") (footprint "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm")
     )
     (path "/00000000-0000-0000-0000-000060e5e54d"
       (reference "U6") (unit 1) (value "MCP1700T-3602E/TT") (footprint "Package_TO_SOT_SMD:SOT-23")
